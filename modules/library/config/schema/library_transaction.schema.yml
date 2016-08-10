@@ -1,0 +1,23 @@
+library.library_transaction.*:
+  type: config_entity
+  label: 'Library transaction config'
+  mapping:
+    id:
+      type: string
+      label: 'ID'
+    uuid:
+      type: string
+    item_id:
+      type: integer
+    nid:
+      type: integer
+    uid:
+      type: integer
+    action_aid:
+      type: integer
+    duedate:
+      type: date
+    notes:
+      type: integer
+    created:
+      type: date

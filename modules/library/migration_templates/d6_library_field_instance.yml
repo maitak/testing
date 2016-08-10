@@ -1,0 +1,20 @@
+id: d6_library_field_instance
+label: Library field instance for content types
+migration_tags:
+  - Drupal 6
+source:
+  plugin: d6_library_content_types
+  constants:
+    entity_type: node
+    type: library_item_field_type
+    field_name: library_item
+process:
+  entity_type: 'constants/entity_type'
+  bundle: name
+  field_name: 'constants/field_name'
+  type: 'constants/type'
+destination:
+  plugin: entity:field_config
+migration_dependencies:
+  required:
+    - d6_library_field
