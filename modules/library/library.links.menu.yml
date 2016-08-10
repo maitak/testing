@@ -1,0 +1,6 @@
+# Library transaction menu items definition
+entity.library_transaction.collection:
+  title: 'Library transaction'
+  route_name: entity.library_transaction.collection
+  description: 'List Library transaction'
+  parent: system.admin_structure

@@ -1,0 +1,5 @@
+entity.library_transaction.add_form:
+  route_name: 'entity.library_transaction.add_form'
+  title: 'Add Library transaction'
+  appears_on:
+    - entity.library_transaction.collection

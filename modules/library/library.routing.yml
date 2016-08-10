@@ -1,0 +1,41 @@
+
+# LibraryTransaction routing definition
+entity.library_transaction.collection:
+  path: '/admin/structure/library_transaction'
+  defaults:
+    _entity_list: 'library_transaction'
+    _title: 'Library transaction'
+  requirements:
+    _permission: 'administer site configuration'
+  options:
+    _admin_route: TRUE
+
+entity.library_transaction.add_form:
+  path: '/admin/structure/library_transaction/add'
+  defaults:
+    _entity_form: 'library_transaction.add'
+    _title: 'Add Library transaction'
+  requirements:
+    _permission: 'administer site configuration'
+  options:
+    _admin_route: TRUE
+
+entity.library_transaction.edit_form:
+  path: '/admin/structure/library_transaction/{library_transaction}'
+  defaults:
+    _entity_form: 'library_transaction.edit'
+    _title: 'Edit Library transaction'
+  requirements:
+    _permission: 'administer site configuration'
+  options:
+    _admin_route: TRUE
+
+entity.library_transaction.delete_form:
+  path: '/admin/structure/library_transaction/{library_transaction}/delete'
+  defaults:
+    _entity_form: 'library_transaction.delete'
+    _title: 'Delete Library transaction'
+  requirements:
+    _permission: 'administer site configuration'
+  options:
+    _admin_route: TRUE

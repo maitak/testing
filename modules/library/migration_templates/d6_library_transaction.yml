@@ -1,0 +1,17 @@
+id: d6_library_transaction
+label: Library transactions
+migration_tags:
+  - Drupal 6
+source:
+  plugin: d6_library_transaction
+process:
+  id:
+    -
+      plugin: machine_name
+      source: name
+  label: name
+destination:
+  plugin: entity:library_transaction
+migration_dependencies:
+  required:
+    - d6_library
